@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Python FUN-ctions</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Home</a>
+                <a class="navbar-brand" href="about.html">About</a>
+                <a class="navbar-brand" href="index.html">Blog Posts</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Python FUN-ctions</h1>
+                        <h2 class="subheading">For loops inside of functions and tkinter graphics</h2>
+                        <span class="meta">Posted on June 27, 2016</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2 class="section-heading">Python</h2>
+                    <p>What we covered today in python was pretty fun... in my opinion at least. We learned how to define functions and how to call those functions later. I guess it just makes things quicker/easier for the person writing the code. We split into groups of 3 and each group had to create a different function and put a list through the function. The program had to output the final modified list. I found it helpful that I could define any function that I wanted and only have to type it once.</p>
+                   
+                    <p>We also learned about tkinter graphics. We didn't cover this for too long but I wrote some code to draw a rectangle with an X through it from corner to corner. I thought that was pretty cool.</p>
+
+                    <h2 class="section-heading">Accounting</h2>
+                    <p>In accounting today, we just had a brief overview of what we had learned last week. About credit and debit transactions and how Assets = Liabilities + Owners Equity.</p>
+                    <h2 class="section-heading">Graphic Design</h2>
+                    <p>Today in graphic design, my team and I created a rough draft of our logo for our startup 2Trade in Adobe Illustrator. We also started on our flyer for our startup.</p>
+
+                    <h2 class="section-heading">10 Step Tutorial On What We Learned Today In Python</h2>
+                    <dl>
+                        <dt>1. Define Your Function</dt>
+                            <dd>Use def in Python to assign a function to a name of your choice:
+                            <dd>def func(num1)->float:</dd> 
+                            <dd>Whatever you put underneath that will be the function. The "float" just means that it will output a float.</dd>
+                        <dt>2. Decide What To Put in the Function</dt>
+                            <dd>My personal function added one to a given integer. But you can put anything in here! (Not really everything but a lot of stuff). Since I had to make an entire list go through the list, I used a for loop inside my function to enable it to go through the entire list. After that, the function returns the data and I print the function's results. Make sure that you always end your function with</dd>
+                            <dd>return num1</dd>
+                        <dt>3. Use Your Function</dt>
+                            <dd>Now that you've defined your function, you can call it whenever you want! Say your function was to add two numbers. Now, whenever you want, you can us it to add two numbers using your new add function.</dd>
+                        <dt>4. Setup Tkinter Graphics in Python<dt>
+                            <dd>When you do this, at the top of your page should be import tkinter. Without it, the following will not work. Underneath the first line, write this:</dd>
+                            <dd>window = tkinter.Tk()</dd>
+                            <dd>canvas = tkinter.Canvas(window, width=500, height=500)</dd>
+                            <dd>canvas.pack()</dd>
+                            <dd>Now at the bottom of the page, write this:</dd>
+                            <dd>tkinter.mainloop()</dd>
+                            <dd>In between the second to last and last line is where we are going to draw in tkinter graphics</dd>
+                        <dt>5. Coordinates</dt>
+                            <dd>Before we start drawing, we have to know how coordinates work inside python. It's a little different from normal mathematics. The x-axis lies at the top of the page while the y-axis is to the left. The units are in pixels. The amount of pixels on the canvas is set in step 4 to 500x500. This will prove to be very important.</dd>
+                        <dt>6. Drawing a Line</dt>
+                            <dd>Lets start by drawing a line. We do this like so:</dd>
+                            <dd>canvas.create_line(w, x, y, z)</dd>
+                            <dd>Now with w, x, y, and z in the parentheses, nothing will happen. That's because this is where the coordinates go. The first two coords being the x/y values for one endpoint on the line. While the last two coords are the x/y values for the second endpoint. Try inputing some values for the coordinates. (Don't input numbers that go above the range that you set in step 4 or the line will go offscreen)</dd>
+                        <dt>7. Making a Rectangle</dt>
+                            <dd>First type the following:</dd>
+                            <dd>canvas.create_rectangle(w, x, y, z)</dd>
+                            <dd>The letters mean the exact same thing as they did in the previous step so nothing new there. The cool thing is that to make a perfect rectangle, you only need two coordinates. This means that the formatting for making a rectangle is the same as making a line! So easy!</dd>
+                        <dt>8. Combining Designs</dt>
+                            <dd>Now that you've learned how to make lines and rectangles in python, you could probably use that to create some pretty cool designs! You're only limited to your own imagination!</dd>
+                        <dt>9. Reflect On What You've Learned</dt>
+                            <dd>You've learned how to create your own original functions in python and how to draw lines and rectangles in tkinter graphics. Good job and well done!</dd>
+                        <dt>10. Prepare Yourself For the Blog Posts to Come</dt>
+                            <dd>My team and I will continue making blog posts and tutorials throughout the CC Startup Academy program about what we are doing in class. So stay tuned!</dd>
+                    </dl>
+                    
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+                    <p class="copyright text-muted"> CC Startup Academy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
